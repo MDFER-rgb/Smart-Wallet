@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subscriptionsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0A0A0A">
+
+    <!-- PAGE TITLE AREA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/tvSubscriptionsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subscriptions"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/btnAddSubscription"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_add"
+            android:tint="#FFFFFF"
+            android:background="@drawable/ios_icon_button" />
+    </LinearLayout>
+
+    <!-- CARD CONTAINER -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#1A1825">
+
+        <LinearLayout
+            android:background="@drawable/glow_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <!-- Empty message -->
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No subscriptions added yet"
+                android:textColor="#8E8E8E"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:visibility="gone" />
+
+            <!-- MAIN LIST -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSubscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

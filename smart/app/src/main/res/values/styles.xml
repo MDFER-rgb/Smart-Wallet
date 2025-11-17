@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerItemStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:popupBackground">#1C002E</item>
+        <item name="android:backgroundTint">#BB86FC</item>
+    </style>
+
+    <!-- FIX FOR SPINNER POPUP THEME -->
+    <style name="SpinnerPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">@android:color/black</item>
+    </style>
+</resources>
+

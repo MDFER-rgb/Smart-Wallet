@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#0C001A"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Currency Converter 💱"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:backgroundTint="#BB86FC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:id="@+id/spnFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#1C002E"
+        android:entries="@array/currency_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#BB86FC"
+        android:theme="@style/SpinnerItemStyle" />
+
+    <Spinner
+        android:id="@+id/spnTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#1C002E"
+        android:entries="@array/currency_array"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#BB86FC"
+        android:theme="@style/SpinnerItemStyle" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:text="Convert"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BB86FC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:text="Converted amount will appear here"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

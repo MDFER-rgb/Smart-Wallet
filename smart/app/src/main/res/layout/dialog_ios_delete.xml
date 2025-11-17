@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ios_dialog_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Subscription"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete this item?"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="#CFCFCF"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"/>
+
+    <!-- Buttons row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="#AAAAAA"
+            android:background="@drawable/ios_button_cancel"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/ios_button_delete"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

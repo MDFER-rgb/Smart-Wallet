@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="14dp"
+    android:background="@drawable/ios_alert_row_bg"
+    android:layout_marginBottom="20dp">   <!-- ⭐ BIG spacing -->
+
+    <!-- ALERT TEXT -->
+    <TextView
+        android:id="@+id/tvAlertText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="2" />
+
+    <!-- ACTIVE SWITCH -->
+    <ToggleButton
+        android:id="@+id/toggleActive"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ios_toggle_selector"
+        android:textOn=""
+        android:textOff=""
+        android:padding="0dp"
+        android:layout_marginEnd="12dp" />
+
+    <!-- DELETE BUTTON -->
+    <Button
+        android:id="@+id/btnDeleteAlert"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:text="DELF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/ios_delete_button"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

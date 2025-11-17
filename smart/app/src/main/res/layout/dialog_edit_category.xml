@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1A1825"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Limit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/edtCategoryLimit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textColor="#FFF"
+        android:textColorHint="#AAA"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/purple_button"/>
+
+    <Button
+        android:id="@+id/btnSaveCategoryLimit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:textColor="#FFF"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/purple_button"/>
+</LinearLayout>

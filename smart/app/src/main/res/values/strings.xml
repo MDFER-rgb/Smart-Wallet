@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SmartWallet</string>
+    <string name="greeting_text">Good afternoon, Mikesh</string>
+    <string name="total_balance_label">Total Balance</string>
+    <string name="total_balance_value">$11,450.00</string>
+    <string name="monthly_budget_label">Monthly Budget</string>
+    <string name="monthly_budget_value">$1,630.00</string>
+    <string name="total_spent_label">Total Spent</string>
+    <string name="add_expense_button">Add Expense</string>
+    <string name="savings_label">Savings: $4,200 / $5,000</string>
+
+
+    <string name="from_currency_prompt">Select From Currency</string>
+    <string name="to_currency_prompt">Select To Currency</string>
+
+    <string-array name="currency_array">
+        <item>US Dollar (USD)</item>
+        <item>Euro (EUR)</item>
+        <item>Sri Lankan Rupee (LKR)</item>
+        <item>British Pound (GBP)</item>
+        <item>Indian Rupee (INR)</item>
+        <item>Japanese Yen (JPY)</item>
+        <item>Australian Dollar (AUD)</item>
+        <item>Canadian Dollar (CAD)</item>
+    </string-array>
+
+
+
+</resources>
